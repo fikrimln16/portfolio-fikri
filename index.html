@@ -5,128 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Fikri</title>
-
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
+
 <body>
-
-
 <div id="menu-bars" class="fas fa-bars"></div>
-    
+<div class="social-media-container" >
+    <div class="social-media">
+        <ul>
+            <li><a href="https://www.instagram.com/fikrimln16/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/fikri-maulana-134086180/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/fikrimln16"  target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+</div>
+
 <main>
+    <!-- header section starts  -->
+    <header>
+        <h1>Website PortFolio <span>Fikri Maulana</span></h1>
+    </header>
+    <!--header section ends-->
+
+    <!--aside section start-->
     <aside>
-        <div class="social-media">
-            <ul>
-                <li><a href="https://www.instagram.com/fikrimln16/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/fikri-maulana-134086180/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/fikrimln16"  target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
+        <div class="image-profile">
+            <div class="image">
+                <img src="assets/images/foto-fikri.png" alt="badge-img-profile" width="120px">
+            </div>
+            <h1>Fikri Maulana</h1>
+            <h3>Mahasiswa Universitas Telkom</h3>
+        </div>
+    
+        <nav class="navbar">
+            <a href="#home">beranda</a>
+            <a href="#about">profil</a>
+            <a href="#project">projek</a>
+        </nav>
+    
+        <div class="credit-profile">
+            <p>Made by love,</p>
+            <p>Created by Fikri</p>
         </div>
     </aside>
+    <!-- aside section ends -->
+    
+    <!-- home section starts  -->
+    <section class="home" id="home">
+    
+        <div class="content">
+            <span class="hi"> Selamat Datang,  </span>
+            <h3> saya <span> fikri maulana </span> </h3>
+            <p class="text"> Halaman portofilio Fikri Maulana sebagai mahasiswa Telkom University.</p>
+            <a href="#about" class="btn">Tentang Saya</a>
+        </div>
+    
+        <div class="image">
+            <img src="assets/images/circle_fikri.png" alt="hero-fikri">
+        </div>
+    
+    </section>
+    <!-- home section ends -->
+    
+    <!-- about section starts  -->
+    <section class="about" id="about">
+        <h1 class="heading-about"> Tentang <span> Saya </span> </h1>
+        <article class="about-container">
+    
+            <div class="image">
+                <img src="assets/images/foto-fikri.png" alt="foto-fikri-2">
+            </div>
+    
+            <div class="content">
+                <h3> Nama saya Fikri Maulana sebagai mahasiswa <span style="color:crimson">Telkom University</span>.</h3>
+                <p>Halo, Nama Saya Fikri Maulana, Saya Seorang Mahasiswa Informatika Di Universitas Telkom. Saya Mencari Pekerjaan Seperti Program Magang IT, Terutama Di Full Stack Developer. Lihat Nama Pengguna GitHub Saya Adalah Fikrimln6. Silahkan Hubungi Saya Di Maulanafikri455@gmail.Com Atau +62813-2219-5912.</p>
+                <div class="box-container">
+                    <div class="box">
+                        <ul>
+                            <li><a href="https://www.instagram.com/fikrimln16/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/fikri-maulana-134086180/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                            <li><a href="https://github.com/fikrimln16" target="_blank"><i class="fab fa-github"></i>github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </article>
+    </section>
+    <!-- about section ends -->
+    
+    <!-- project section start-->
+    <section class="project" id="project">
+    <h1 class="heading-project"> Projek <span> Saya </span> </h1>
+    <article class="project-container">
+        <div class="project-header">
+            <h2>Berikut adalah projek-projek yang sudah saya buat selama masa perkuliahan.</h2>
+        </div>
+        <div class="project-content">
+    
+            <div class="project-card">
+                <img src="assets/images/project-card/autogatesystem.png" class="card-image" alt="web-autogatesytem">
+                <div class="card-body">
+                    <h1 class="card-title">Auto-gate System</h1>
+                    <p class="card-sub-title">applikasi pendeteksi masker</p>
+                    <p class="card-info">Mendeteksi apakah seseorang memakai masker atau tidak</p>
+                    <a href="https://github.com/fikrimln16/AUTOGATESYSTEM-FRONTEND" target="_blank"><button class="card-btn">Read more!</button></a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="assets/images/project-card/wa-bot.png" class="card-image" alt="wa-bot-img">
+                <div class="card-body">
+                    <h1 class="card-title">Whatsapp Bot</h1>
+                    <p class="card-sub-title">Membuat WA Bot dengan API</p>
+                    <p class="card-info">Membuat whatsapp bot dengan Flask API, yang bertujuan untuk mempermudah kehidupan sehari-hari</p>
+                    <a href="https://github.com/fikrimln16/DAILYCOSTAPI-WA-BOT" target="_blank"><button class="card-btn">Read more!</button></a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="assets/images/project-card/javaswing.jpg" class="card-image" alt="java-swing-img">
+                <div class="card-body">
+                    <h1 class="card-title">JavaSwing GUI</h1>
+                    <p class="card-sub-title">Membuat GUI tentang daily-cost</p>
+                    <p class="card-info">DailyCost adalah applikasi untuk menghitung pengeluaran harian, mingguan, dan bulanan user</p>
+                    <a href="https://github.com/fikrimln16/autogatesystem-gui" target="_blank"><button class="card-btn">Read more!</button></a>
+                </div>
+            </div>
+    
+        </div>
+    </article>
+    </section>
+    <!-- project section end-->
+    
+    <!-- footer section  -->
+    <footer class="footer"> created by <span> fikri </span> | all rights reserved! </footer>
+    
+    <!-- import js script  -->
+    <script src="assets/js/script.js"></script>
 </main>
-
-<!-- header section starts  -->
-<header>
-    <a href="#" class="logo"> <span>Porto</span> Saya </a>
-    <nav class="navbar">
-        <a href="#home">beranda</a>
-        <a href="#about">profil</a>
-        <a href="#project">project</a>
-    </nav>
-    <a href="#" class="logo"> <span>Fikri</span> mln </a>
-</header>
-<!-- header section ends -->
-
-<!-- home section starts  -->
-<section class="home" id="home">
-    <div class="content">
-        <span class="hi"> Selamat Datang,  </span>
-        <h3> saya <span> fikri maulana </span> </h3>
-        <p class="text"> Halaman portofilio Fikri Maulana sebagai mahasiswa Telkom University.</p>
-        <a href="#about" class="btn">about me</a>
-    </div>
-    <div class="image">
-        <img src="images/circle_fikri.png" alt="">
-    </div>
-</section>
-<!-- home section ends -->
-
-<!-- about section starts  -->
-<section class="about" id="about">
-<h1 class="heading-about"> Tentang <span> Saya </span> </h1>
-<div class="row-1">
-    <div class="image">
-        <img src="images/foto-fikri.png" alt="">
-    </div>
-    <div class="content">
-        <h3> Nama saya Fikri Maulana sebagai mahasiswa <span style="color:crimson">Telkom University</span>.</h3>
-        <p>Hello, my name is Fikri Maulana, I am a undergraduate on Informatics at Telkom University. I’m looking for a job like IT internship program, especially in Full Stack Developer. Check out my GitHub username is fikrimln6. Please contact me at maulanafikri455@gmail.com or +62813-2219-5912.</p>
-        <div class="box-container">
-            <div class="box">
-                <p> <span> tempat, tanggal-lahir : </span> Tasikmalaya, 25 Juni 2002 </p>
-                <p> <span> jenis kelamin : </span> laki </p>
-                <p> <span> pekerjaan : </span> mahasiswa </p>
-                <p> <span> phone : </span> +62813-2219-5912 </p>
-                <p> <span> email : </span> maulanafikri455@gmail.com </p>
-                <p> <span> negara : </span> indonesia </p>
-            </div>
-        </div>
-    </div>
-
-</div>
-</section>
-<!-- about section ends -->
-
-<!-- project section start-->
-<section class="project" id="project">
-<h1 class="heading-project"> Projek <span> Saya </span> </h1>
-<div class="project-container">
-    <div class="project-header">
-        <p>Berikut adalah projek-projek yang sudah saya buat selama masa perkuliahan.</p>
-    </div>
-    <div class="project-content">
-        <div class="project-card">
-            <img src="images/autogatesystem.png" class="card-image" alt="">
-            <div class="card-body">
-                <h1 class="card-title">Auto-gate System</h1>
-                <p class="card-sub-title">applikasi pendeteksi masker</p>
-                <p class="card-info">Mendeteksi apakah seseorang memakai masker atau tidak, jika memakai maka applikasi bisa digunakan</p>
-                <a href="https://github.com/fikrimln16/AUTOGATESYSTEM-FRONTEND" target="_blank"><button class="card-btn">Read more!</button></a>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="images/wa-bot.png" class="card-image" alt="">
-            <div class="card-body">
-                <h1 class="card-title">Whatsapp Bot</h1>
-                <p class="card-sub-title">Membuat WA Bot dengan API</p>
-                <p class="card-info">Membuat whatsapp bot dengan Flask API, yang bertujuan untuk mempermudah kehidupan sehari-hari</p>
-                <a href="https://github.com/fikrimln16/DAILYCOSTAPI-WA-BOT" target="_blank"><button class="card-btn">Read more!</button></a>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="images/java-swing.jpg.crdownload" class="card-image" alt="">
-            <div class="card-body">
-                <h1 class="card-title">JavaSwing GUI</h1>
-                <p class="card-sub-title">Membuat GUI tentang daily-cost</p>
-                <p class="card-info">DailyCost adalah applikasi untuk menghitung pengeluaran harian, mingguan, dan bulanan user</p>
-                <a href="https://github.com/fikrimln16/autogatesystem-gui" target="_blank"><button class="card-btn">Read more!</button></a>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!-- project section end-->
-
-<!-- footer section  -->
-<footer class="footer"> created by <span> fikri </span> | all rights reserved! </footer>
-
-<!-- import js script  -->
-<script src="js/script.js"></script>
-
 </body>
 </html>

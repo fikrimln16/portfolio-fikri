@@ -9,7 +9,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background-color: white;
+    background-color: black;
 }
 
 html::-webkit-scrollbar-thumb{
@@ -34,143 +34,13 @@ html{
 }
 
 body{
-    background: #fcf2e8;
+    background: #FEFEDF;
     padding-left: 30rem;
 }
 
 section{
     padding:1rem 5%;
     min-height: 100vh;
-}
-
-main aside {
-    position: fixed;
-    inset-block: 0;
-    inset-inline-end: 0;
-    
-}
-
-main aside.active {
-    position: fixed;
-    inset-block: 0;
-    inset-inline-end: 0;
-    right: -10%;
-}
-
-main aside .social-media {
-    height: 100%;
-    display: flex;
-}
-
-main aside .social-media ul {
-    padding: 1rem 2rem;
-    margin: auto;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    background-color: var(--main-color);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-main aside .social-media li {
-    list-style-type: none;
-}
-
-main aside .social-media li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white;
-    transition: all .1s ease-in-out;
-}
-
-main aside .social-media li a:hover {
-    color: #89b0d9;
-}
-
-
-.heading{
-    font-size: 4rem;
-    padding-bottom: 1rem;
-    color:#111;
-    text-transform: uppercase;
-}
-
-.heading span{
-    color:var(--main-color);
-    text-transform: uppercase;
-}
-
-
-
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding:.8rem 3rem;
-    background:var(--main-color);
-    color:#fff;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.btn:hover{
-    background:#111;
-    letter-spacing: .2rem;
-}
-
-header{
-    position: fixed;
-    top:0; left:0; bottom:0;
-    background:#222;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    flex-flow: column;
-    padding:8rem 2rem;
-    width:30rem;
-    text-align: center;
-}
-
-header .logo{
-    text-transform: uppercase;
-    color:#fff;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-header .logo span{
-    text-transform: uppercase;
-    color:var(--main-color);
-}
-
-header .navbar a{
-    display: block;
-    font-size: 2rem;
-    color:#fff;
-    margin:2rem 0;
-    text-transform: uppercase;
-}
-
-header .navbar a:hover{
-    letter-spacing: 1rem;
-    color:var(--main-color);
-}
-
-header .follow .button-kontak{
-    font-size: 2.5rem;
-    color:#fff;
-    margin:0 .7rem;
-    border-radius: 1rem;
-    background-color: var(--main-color);
-    padding: 0.7rem;
-
-}
-
-header .follow .button-kontak:hover{
-    color: #fff;
 }
 
 #menu-bars{
@@ -186,7 +56,179 @@ header .follow .button-kontak:hover{
     display: none;
 }
 
+/* right side button */
+.social-media-container {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    
+}
 
+.social-media-container.active {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    right: -10%;
+}
+
+.social-media-container .social-media {
+    height: 100%;
+    display: flex;
+}
+
+.social-media-container .social-media ul {
+    padding: 1rem 2rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-media-container .social-media li {
+    list-style-type: none;
+}
+
+.social-media-container .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+.social-media-container .social-media li a:hover {
+    color: #89b0d9;
+}
+
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color:#111;
+    text-transform: uppercase;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+/* button css */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:crimson;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:#111;
+}
+
+/* header start */
+header{
+    background: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: #FEFEDF;
+}
+
+header h1 span{
+    color: white;    
+    text-transform: uppercase;
+    color: #FEFEDF
+}
+
+/* aside start */
+aside{
+    position: fixed;
+    top:0; left:0; bottom:0;
+    background:#222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    width:30rem;
+    text-align: center;
+}
+
+aside .image-profile img{
+    border-radius: 20px;
+    width: 50%;
+
+}
+
+aside .image-profile h1{
+    color: #fff;
+    margin-top: 1em;
+    font-size: 3rem;
+    text-transform: upercase;
+}
+
+aside .image-profile h3{
+    color: #fff;
+    margin-top: 1em;
+    font-size: 1.2rem;
+    text-transform: upercase;
+}
+
+aside .logo{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+aside .logo span{
+    text-transform: uppercase;
+    color:var(--main-color);
+}
+
+aside .navbar a{
+    display: block;
+    font-size: 2rem;
+    color:#fff;
+    margin:2rem 0;
+    text-transform: uppercase;
+}
+
+aside .navbar a:hover{
+    letter-spacing: 1rem;
+    color:var(--main-color);
+}
+
+aside .follow .button-kontak{
+    font-size: 2.5rem;
+    color:#fff;
+    margin:0 .7rem;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+    padding: 0.7rem;
+
+}
+
+aside .follow .button-kontak:hover{
+    color: #fff;
+}
+
+aside .credit-profile{
+    color: #fff;
+}
+
+/* home start */
 .home{
     display: flex;
     align-items: center;
@@ -234,6 +276,7 @@ header .follow .button-kontak:hover{
     padding:.5rem 0;
 }
 
+/* about start  */
 .about{
     display: flex;
     justify-content: center;
@@ -254,61 +297,77 @@ header .follow .button-kontak:hover{
     text-transform: uppercase;
 }
 
-.about .row-1{
+.about .about-container{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
     padding-bottom: 2rem;
 }
 
-.about .row-1 .image{
+.about .about-container .image{
     flex:1 1 25rem;
 }
 
-.about .row-1 .image img{
+.about .about-container .image img{
     height: 100%;
     width:100%;
     object-fit: cover;
-    border:1rem solid #fff;
+    border:1rem solid crimson;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-.about .row-1 .content{
+.about .about-container .content{
     flex:1 1 50rem;
     display: flex;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.about .row-1 .content h3{
+.about .about-container .content h3{
     color:#333;
     font-size: 3.5rem;
     
 }
 
-.about .row-1 .content p{
+.about .about-container .content p{
     color:#666;
     font-size: 1.7rem;
     padding:.5rem 0;
 }
 
-.about .row-1 .content .box-container{
+.about .about-container .content .box-container{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
     padding: 0.5rem 0;
 }
 
-.about .row-1 .content .box-container .box{
+.about .about-container .content .box-container .box{
     flex:1 1 20rem;
 }
 
-.about .row-1 .content .box-container .box span{
+.about .about-container .content .box-container .box ul{
+    font-size: 3rem;
+    list-style: none;
+} 
+
+.about .about-container .content .box-container .box ul li a{
+    color: black;
+    font-weight: 500;
+}
+
+.about .about-container .content .box-container .box ul li a:hover{
+    color: crimson;
+    font-weight: 500;
+    letter-spacing: 1.2rem;
+}
+
+.about .about-container .content .box-container .box span{
     color:var(--main-color);
 }
 
+/* project start */
 .project{
     display: flex;
     justify-content: center;
@@ -317,7 +376,7 @@ header .follow .button-kontak:hover{
     flex-direction: column;
 }
 
-.heading-project{
+.project .heading-project{
     font-size: 4rem;
     padding-bottom: 1rem;
     color:#111;
@@ -325,12 +384,12 @@ header .follow .button-kontak:hover{
     margin: 2rem 2rem;
 }
 
-.heading-project span{
+.project .heading-project span{
     color:var(--main-color);
     text-transform: uppercase;
 }
 
-.project-container{
+.project .project-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,7 +397,7 @@ header .follow .button-kontak:hover{
     text-align: center;
 }
 
-.project-header{
+.project .project-container .project-aside{
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -346,7 +405,7 @@ header .follow .button-kontak:hover{
 
 }
 
-.project-content{
+.project .project-container .project-content{
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
@@ -357,9 +416,10 @@ header .follow .button-kontak:hover{
     gap: 3em;
 }
 
-.project-card{
-    width: 320px;
-    height: 500px;
+/* card */
+.project .project-container .project-content .project-card{
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     overflow: hidden;
     position: relative; 
@@ -415,19 +475,17 @@ header .follow .button-kontak:hover{
 
 .card-btn{
     color: #1f3d47;
-    background: #8fabba;
+    background: crimson;
     padding: 10px 20px;
     border-radius: 5px;
-    text-transform: capitalize;
-    border:none;
-    outline:none;
     font-weight:500;
     cursor: pointer;
     width: 50%;
     color: white;
-    
 }
 
+
+/* footer */
 .footer{
     margin-top: 2rem;
     font-size: 2rem;
@@ -440,25 +498,6 @@ header .follow .button-kontak:hover{
 .footer span{
     color:white;
 }
-
-.heading-project{
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* media queries  */
@@ -476,17 +515,16 @@ header .follow .button-kontak:hover{
         display: initial;
     }
 
-    header{
+    aside{
         left:-120%;
     }
 
-    header.active{
+    aside.active{
         left:0%;
     }
 
-    .cursor-1,
-    .cursor-2{
-        display: none;
+    header h1{
+        font-size: 1.5rem;
     }
 
 }
@@ -497,12 +535,12 @@ header .follow .button-kontak:hover{
         font-size: 50%;
     }
 
-    header{
+    aside{
         width:100%;
     }
 
-    .experience .box-container .box{
-        padding-right: 0;
+    .social-media-container{
+        z-index: 1000;
     }
 
 }
