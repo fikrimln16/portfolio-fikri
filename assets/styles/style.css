@@ -134,9 +134,10 @@ section{
 header{
     background: crimson;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 8rem;
+    padding: 0 4rem;
 }
 
 header h1{
@@ -148,6 +149,21 @@ header h1 span{
     color: white;    
     text-transform: uppercase;
     color: #FEFEDF
+}
+
+header .navigasi ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+header .navigasi li a i{
+    font-size: 3rem;
+    color: #FEFEDF;
+}
+
+header .navigasi li a:hover{
+    color: #FEFEDF;
 }
 
 /* aside start */
